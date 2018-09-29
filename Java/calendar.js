@@ -1,14 +1,14 @@
 $(document).ready(function () {
 
-    const Sunday = moment().startOf('week').format('ddd MM Do');
-    const Monday = moment().startOf('week').add(1, 'day').format('ddd MM Do');
-    const Tuesday = moment().startOf('week').add(2, 'day').format('ddd MM Do');
-    const Wednesday = moment().startOf('week').add(3, 'day').format('ddd MM Do');
-    const Thursday = moment().startOf('week').add(4, 'day').format('ddd MM Do');
-    const Friday = moment().startOf('week').add(5, 'day').format('ddd MM Do')
-    const Saturday = moment().endOf('week').format('ddd MM Do');
+    const Sunday = moment().startOf('week').format('ddd MMM Do');
+    const Monday = moment().startOf('week').add(1, 'day').format('ddd MMM Do');
+    const Tuesday = moment().startOf('week').add(2, 'day').format('ddd MMM Do');
+    const Wednesday = moment().startOf('week').add(3, 'day').format('ddd MMM Do');
+    const Thursday = moment().startOf('week').add(4, 'day').format('ddd MMM Do');
+    const Friday = moment().startOf('week').add(5, 'day').format('ddd MMM Do')
+    const Saturday = moment().endOf('week').format('ddd MMM Do');
     const CalDays = [Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday];
-    const MomentCalFormat = moment().format('ddd MM Do');
+    const MomentCalFormat = moment().format('ddd MMM Do');
     var config = {
         apiKey: "AIzaSyDrByFzhj9Ak_lZ54uoZEGTcTWKmsWw5LQ",
         authDomain: "project-1-calendar-52aaa.firebaseapp.com",

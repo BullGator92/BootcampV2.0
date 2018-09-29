@@ -31,15 +31,15 @@
     </header>
     <div class="row">
         <div class="col s12 m2 lg2">
-            <section class="boxdiv" placeholder="Indeed">
+            <section class="boxdiv left" placeholder="Indeed">
                 <h3>Indeed Listings</h3>
             </section>
 
-            <section class="boxdiv" placeholder="Google Maps">
+            <section class="boxdiv left" placeholder="Google Maps">
                 <h3>Google Maps</h3>
             </section>
         </div>
-        <div class="boxdiv col s12 m8 l8">
+        <div class="boxdiv center col s12 m8 l8">
             <section class="Calendar">
                 <h5 class="center-align">Calendar for this week:</h5>
                 <table class='responsive-table'>
@@ -53,6 +53,16 @@
                 <h5 class="center-align">Upcoming Events:</h5>
                 <table class='responsive-table'></table>
             </section>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="event_name_input" type="text" class="validate" data-length="25">
+                    <label for="event_name">Name of Event</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="event_date_input" type="text" class="validate" data-length="10">
+                    <label for="event_date_input">Date</label>
+                </div>
+            </div>
         </div>
         <div class="col s12 m2 lg2 boxdiv right" placeholder="Resources">
             <h3>Resources Tab</h3>
