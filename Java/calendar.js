@@ -9,6 +9,15 @@ $(document).ready(function () {
     const Saturday = moment().endOf('week').format('ddd MM Do');
     const CalDays = [Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday];
     const MomentCalFormat = moment().format('ddd MM Do');
+    var config = {
+        apiKey: "AIzaSyDrByFzhj9Ak_lZ54uoZEGTcTWKmsWw5LQ",
+        authDomain: "project-1-calendar-52aaa.firebaseapp.com",
+        databaseURL: "https://project-1-calendar-52aaa.firebaseio.com",
+        projectId: "project-1-calendar-52aaa",
+        storageBucket: "",
+        messagingSenderId: "237185498286"
+      };
+      firebase.initializeApp(config);
 
     CalDays.forEach(function(Day) {
         
