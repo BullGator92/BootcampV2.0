@@ -23,6 +23,7 @@ body {
 .boxdiv {
     background-color:rgba(255, 255, 255, 0.5);
     border: 1px solid black;
+    margin: 1rem;
 }
 header {
     margin-bottom: 4rem;
