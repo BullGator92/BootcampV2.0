@@ -16,7 +16,7 @@ $(document).ready(function () {
     //for each day of the week, add a td for in the calendar 
     CalDays.forEach(function(Day) {
         const CalDaysTd = $(`
-        <td>${Day}</td>
+        <th>${Day}</th>
         `);
         $(CalDaysTd).appendTo("#CalDaysTd");
     });
