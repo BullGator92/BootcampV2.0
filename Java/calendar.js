@@ -9,12 +9,14 @@ $(document).ready(function () {
     const Saturday = moment().endOf('week').toString();
     const CalDays = [Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday];
     
+    
     // const Today = moment().format('ddd MMM Do')
     // const Tomorrow =  moment().add(1, 'day').format('ddd MMM Do')
     // const MomentToday;
     const MomentCalFormat = moment().format('ddd MM Do');
     //for each day of the week, add a td for in the calendar 
     CalDays.forEach(function(Day) {
+        
         const CalDaysTd = $(`
         <th>${Day}</th>
         `);
