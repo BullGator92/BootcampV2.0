@@ -36,4 +36,6 @@ $(document).ready(function () {
     console.log(Monday);
     console.log(Saturday);
     console.log(MomentCalFormat)
+
+    
 });
