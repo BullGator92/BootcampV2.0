@@ -35,7 +35,8 @@ $(document).ready(function () {
     console.log(Sunday);
     console.log(Monday);
     console.log(Saturday);
-    console.log(MomentCalFormat)
+    console.log(MomentCalFormat);
+    console.log("Matt was here!");
 
     
 });
