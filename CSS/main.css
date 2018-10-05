@@ -42,3 +42,10 @@ header {
     color: black;
     font-weight: bold;
 }
+div.row {
+    margin-bottom: 0px;
+}
+
+.btn-small {
+    float: right;
+}
