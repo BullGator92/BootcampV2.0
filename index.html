@@ -40,31 +40,8 @@
             </section>
         </div>
         <div class="boxdiv center col s12 m8 l8">
-            <button id="authorize_button" style="display: none;">Authorize</button>
-            <button id="signout_button" style="display: none;">Sign Out</button>
-
-            <pre id="content"></pre>
-            <section class="Calendar">
-                <h5 class="center-align">Calendar for this week:</h5>
-                <table class='responsive-table'>
-                    <thead>
-                        <tr id="CalDaysTh"></tr>
-                    </thead>
-                    <tbody>
-                        <tr id="CalDaysTd"></tr>
-                    </tbody>
-                </table>
-                <h5 class="center-align">Upcoming Events:</h5>
-                <table class='responsive-table'></table>
-            </section>
-            <div class="row">
-                <div class="input-field col s6">
-                    <input id="event_name_input" type="text" class="validate" data-length="25">
-                    <label for="event_name">Name of Event</label>
-                </div>
-                <div class="input-field col s6">
-                    <input id="event_date_input" type="text" class="validate" data-length="10">
-                    <label for="event_date_input">Date</label>
+            <iframe src="https://calendar.google.com/calendar/b/1/embed?showNav=0&amp;showPrint=0&amp;showTz=0&amp;mode=WEEK&amp;height=500&amp;wkst=1&amp;hl=en&amp;bgcolor=%23ffffff&amp;src=2018gatechbootcampsite%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FNew_York"
+             style="border-width:0" width="600" height="400" frameborder="0" scrolling="no"></iframe>
                 </div>
             </div>
         </div>
@@ -80,6 +57,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+<script src="Java/index.js"></script>
 <script src="Java/main.js"></script>
 <script src="Java/calendar.js"></script>
 
