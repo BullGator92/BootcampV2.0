@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/main.css" />
-
+    
 </head>
 
 <body>
@@ -35,7 +35,8 @@
                 <h3>Indeed Listings</h3>
             </section>
 
-            <section class="boxdiv left" placeholder="Google Maps">
+            <section class="boxdiv left" id="map" placeholder="Google Maps">
+
                 <h3>Google Maps</h3>
             </section>
         </div>
@@ -52,6 +53,18 @@
     </div>
 
 </body>
+    
+<script>var map;
+    function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+       zoom: 13,
+       center: {lat: 33.77661467620815, lng: -84.39008474349977}
+     });
+ }</script>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeag2WwVDx9g2lGiiWgfVhPAzGYp2JVzs&callback=initMap">
+</script>
 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -60,5 +73,6 @@
 <script src="Java/index.js"></script>
 <script src="Java/main.js"></script>
 <script src="Java/calendar.js"></script>
+
 
 </html>
