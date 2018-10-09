@@ -13,6 +13,7 @@ var config = {
 firebase.initializeApp(config);
 var database = firebase.database();
 
+
 $(".submit-btn").on("click", function () {
   event.preventDefault();
   var saveTitle = $("#save-title").val();
@@ -32,6 +33,8 @@ $(".submit-btn").on("click", function () {
   $("#save-title").val("");
   $("#save-url").val("");
 
+
+  
 })
 
 database.ref().on("child_added", function (childSnapshot) {
@@ -65,8 +68,43 @@ $("tbody").on('click', '.delete-btn', function () {
 //   console.log("on the right track")
 //   });
 
+// ==============Authentication=========================
 
+var provider = new firebase.auth.GoogleAuthProvider();
 
+function googleSign() {
+firebase.auth().signInWithPopup(provider).then(function(result) {
+  // This gives you a Google Access Token. You can use it to access the Google API.
+  var token = result.credential.accessToken;
+  // The signed-in user info.
+  var user = result.user;
+  // ...
+}).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // The email of the user's account used.
+  var email = error.email;
+  // The firebase.auth.AuthCredential type that was used.
+  var credential = error.credential;
+  // ...
+});
+};
 
+$("#login").on('click', function () {
+  googleSign();
+});
 
+//====================Pagination====================
 
+$(document).ready(function(){
+  $('#data-container').pageMe({
+    pagerSelector:'#myPager',
+    activeColor: 'blue',
+    prevText:'Previous',
+    nextText:'Siguiente',
+    showPrevNext:true,
+    hidePageNumbers:false,
+    perPage:10
+  });
+});
