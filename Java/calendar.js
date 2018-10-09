@@ -31,12 +31,14 @@ $(document).ready(function () {
         $(CalDaysTd).appendTo("#CalDaysTd");
 
     });
+    
 
-    console.log(Sunday);
-    console.log(Monday);
-    console.log(Saturday);
-    console.log(MomentCalFormat);
+    // console.log(Sunday);
+    // console.log(Monday);
+    // console.log(Saturday);
+    // console.log(MomentCalFormat);
     console.log("Matt was here!");
+    console.log('Well hello Matt, come to help?')
 
     
 });
