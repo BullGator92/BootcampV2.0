@@ -45,7 +45,7 @@ console.log(childSnapshot.key)
   var saveURL = childSnapshot.val().saveURL;
 
   var newRow = $("<tr>").append(
-    $("<td>").html(`<a href="${saveURL}">${saveTitle}</a>`),
+    $("<td>").html(`<a href="${saveURL}" target="_blank">${saveTitle}</a>`),
     $("<td>").html(`<a class="btn-floating waves-effect delete-btn waves-light btn-small red">
             <i class="material-icons" >remove</i>
         </a>`),
@@ -64,10 +64,6 @@ $("tbody").on('click', '.delete-btn', function () {
   
     
 });
-// database.ref().on("value", function (childSnapshot) {
-//   console.log("on the right track")
-//   });
-
 // ==============Authentication=========================
 
 var provider = new firebase.auth.GoogleAuthProvider();
@@ -95,16 +91,3 @@ $("#login").on('click', function () {
   googleSign();
 });
 
-//====================Pagination====================
-
-$(document).ready(function(){
-  $('#data-container').pageMe({
-    pagerSelector:'#myPager',
-    activeColor: 'blue',
-    prevText:'Previous',
-    nextText:'Siguiente',
-    showPrevNext:true,
-    hidePageNumbers:false,
-    perPage:10
-  });
-});
