@@ -1,7 +1,10 @@
 $(document).ready(function () {
     $('#calendar').fullCalendar({
-        defaultView: 'basicWeek'
-      })
+        defaultView: 'listWeek',
+        height: 600,
+        
+        
+         })
     
     
     

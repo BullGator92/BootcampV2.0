@@ -47,6 +47,8 @@ header {
     width: 300px;
 }
 
-.mv-dayname {
-    background-color: transparent;
+#calendar {
+    height: 600px;
+    width: 500px;
 }
+
