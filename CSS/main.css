@@ -42,6 +42,11 @@ header {
     color: black;
     font-weight: bold;
 }
+#map {
+    height: 500px;
+    width: 500px;
+}
+
 .mv-dayname {
     background-color: transparent;
 }
