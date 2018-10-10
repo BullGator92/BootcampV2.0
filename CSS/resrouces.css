@@ -10,7 +10,7 @@ td {
     font-weight: bold;
 }
 .table-container { 
-    height: 200px;
+    height: auto;
     table-layout:fixed;
     overflow-y: scroll;
     width:100%;
