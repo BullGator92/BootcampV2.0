@@ -1,0 +1,44 @@
+tr {
+    transform: scale(.75);
+    margin-left: 10px;
+    border-style: none;
+}
+
+td {
+    padding: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.table-container { 
+    height: 200px;
+    table-layout:fixed;
+    overflow-y: scroll;
+    width:100%;
+
+}
+/* unvisited link */
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+}
+
+/* selected link */
+a:active {
+    color: black;
+}
+
+/* #resources {
+    height: 350px;
+    table-layout:fixed;
+    overflow-y: scroll;
+    width:100%;
+} */
