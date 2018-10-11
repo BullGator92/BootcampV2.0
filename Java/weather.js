@@ -1,3 +1,4 @@
+$(document).ready(function () {
 var APIKey = "582be6ca98b5cdbb344133dbf8bba753";
 
     // Here we are building the URL we need to query the database
@@ -21,11 +22,13 @@ console.log("now")
         
         var wID = response.weather[0].icon
 
-    $("#weather").append(
-            $("<div>").html("<h4>" + response.name + " Weather</h4>"),
-            $("<div>").text("Temperature (F) " + response.main.temp),
-            $("<div>").html(`${response.weather[0].main}<img src="http://openweathermap.org/img/w/${wID}.png" alt="W3Schools.com">`),
-            
-          );
+    $("#weather").append(`
+    <img src="http://openweathermap.org/img/w/${wID}.png" alt="W3Schools.com" id="weatherPic" class="center">
+    <h4> ${response.name} </h4>
+    <h5>Temperature (F) ${response.main.temp}</h5>
+    <h5>${response.weather[0].main}</h5>
+    <h5>${response.weather[0].description}</h5>
+    `);
 
       });
+    });

@@ -1,4 +1,4 @@
-
+$(document).ready(function () {
 //Google Maps traffic layer
 var trafficLayer = new google.maps.TrafficLayer();
 trafficLayer.setMap(map);
@@ -68,6 +68,8 @@ service.getDistanceMatrix(
     avoidHighways: Boolean,
     avoidTolls: Boolean,
   }, callback);
+
+});
 
 
 

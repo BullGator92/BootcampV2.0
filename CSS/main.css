@@ -1,3 +1,4 @@
+@media only screen and (min-width: 801px) {
 body {
     background-image: url(../Images/AtlantaNightTime.jpg);
     background-size: 100%;
@@ -44,7 +45,7 @@ header {
     height: 345px;
     width: 345px;
     order: 1;
-    margin: 10px;
+    margin: 20px 20px 20px 10px;
 }
 
 #calendar {
@@ -64,13 +65,14 @@ header {
     height: 345px;
     width: 345px;
     order: 1;
-    margin: 10px;
+    margin: 20px 20px 20px 10px;
+    text-align: center;
 }
 
 #resources {
     height: 700px;
     order: 3;
-    margin: 10px;
+    margin: 20px 10px 20px 20px;
 }
 
 #firstDiv {
@@ -83,5 +85,85 @@ header {
     background-color: #26a69a;
     color: white;
 }
+#weatherPic {
+    height: 80px;
+    width: 80px;
+}
+
+}
+@media only screen and (max-width: 775px) {
+    body {
+        background-image: url(../Images/AtlantaNightTime.jpg);
+        background-repeat: no-repeat;
+    }
+
+    .navbar { 
+        width: 100%;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+    .circle {
+        display: none;
+    }
+    
+    .GaTechLogo {
+        display: none;
+    }
+    .boxdiv {
+        background-color:rgba(255, 255, 255, 0.5);
+        border: 1px solid black;
+        margin: 5px;
+    }
+    header {
+        margin-bottom: 5px;
+    }
+    .input-field>label {
+        color: black;
+        font-weight: bold;
+    }
+    #map {
+        width: 100%;
+        order: 1;
+    }
+    
+    #calendar {
+        width: 95%;
+        flex-grow: 2;
+        order: 2;
+    }
+    #mainRow {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #weather {
+        width: 100%;
+        order: 4;
+        margin: 10px;
+        text-align: center;
+    }
+    
+    #resources {
+        height: 95%;
+        order: 3;
+    }
+    
+    #firstDiv {
+        flex-direction: column;
+    }
+    .fc-list-item.fc-has-url {
+        background-color: white;
+    }
+    .fc-list-heading td {
+        background-color: #26a69a;
+        color: white;
+    }
+
+}    
 
 

@@ -1,6 +1,4 @@
-// Initialize Firebase
-
-
+$(document).ready(function () {
 
 var config = {
   apiKey: "AIzaSyDrByFzhj9Ak_lZ54uoZEGTcTWKmsWw5LQ",
@@ -89,5 +87,7 @@ firebase.auth().signInWithPopup(provider).then(function(result) {
 
 $("#login").on('click', function () {
   googleSign();
+});
+
 });
 
